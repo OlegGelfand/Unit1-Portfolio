@@ -10,8 +10,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |---|---| ---|
 |Day 1| Project Description | Complete
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -88,13 +88,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 Component |	Priority |	Estimated Time|	Time Invested	|Actual Time|
 | --- | :---: |  :---: | :---: | :---: |
 |Build header paragraph	|H	|0.5hrs|	.25hrs|	0hrs|
-|Nest page in a grid	|H|	1hr|	.25hrs|	0hrs|
+|Nest page in a grid	|H|	1hr|	.25hrs|	.5hrs|
 |Add Name|	H	|0.5hrs|	.25hrs|	.25hrs|
 |Add Motivational Quote|	H	|0.5hrs	|.25hrs	|.25hrs
 |Add Nav bar 1 in header to link to pages devoted to projects|	H|	1.5hrs|	.5hrs|	.5hrs|
 |Add Nav bar 2 on left side of desktop view|	H|	2.0hrs|	.5hrs|	.5hrs|
-|link resume to Nav 2|	H|	.5hrs|	.5hrs|	0hrs|
-|link about me page to Nav 2|	H |.5hrs|	0hrs|	0hrs|
+|link resume to Nav 2|	H|	.5hrs|	.5hrs|	.5hrs|
+|link about me page to Nav 2|	H |.5hrs|	.25hrs|	.25hrs|
 |link other profile sites to Nav 2|	H|	.5hrs|	.5hrs|	.5hrs|
 |Add Nav bar 3 in footer to link helpful sites|	H|	1hr|	.5hrs|	0hrs|
 |Build "About Me" Section|	H|	3hrs|	0hrs|	0hrs|

@@ -1,0 +1,32 @@
+
+html {
+    background-color: rgba(255,0,0, .7);
+    background-size: cover;
+    
+}
+body {
+    /* background-image: url("https://res.cloudinary.com/dkng1fqtz/image/upload/v1583939438/IMG_0670_kuow1v.jpg"); */
+    justify-content: cover;
+    /* opacity:.3; */
+    
+}
+
+p {
+color: blue;
+font-style: oblique; 
+font-variant: small-caps;
+text-shadow: yellow;
+font-family: fantasy;
+margin: 10px;
+font-weight: 900;
+font-size: 25px;
+background-color: cadetblue;
+background-image: url("https://res.cloudinary.com/dkng1fqtz/imagse/upload/v1583939438/IMG_0670_kuow1v.jpg");
+background-size: contain;
+background-size: 100%;
+scrollbar-base-color: brown;
+}
+
+h1 {
+    text-align: center;
+}

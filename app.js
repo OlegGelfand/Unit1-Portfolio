@@ -47,3 +47,11 @@ function app (projects){
   })
 };
 
+function toggleClass(){
+  let menu = document.querySelector(".projects");
+  menu.classList.toggle('toggleCls')
+
+}
+
+let hamburger = document.querySelector('.hamIcon');
+hamburger.addEventListener("click",toggleClass);
