@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://media.giphy.com/media/fq8HxnZAkoTybqirPN/giphy.gif");
+    /* background-image: url("https://media.giphy.com/media/fq8HxnZAkoTybqirPN/giphy.gif"); */
     display: grid;
     grid-template-columns: repeat(7 fr);
     grid-template-rows: repeat(7 fr);
@@ -10,15 +10,22 @@ body {
     width: 100%;
    height: 100%;
 }
+
 header {
    font-family:'Slabo 15px', serif;
-   /* background-image: url("https://res.cloudinary.com/dkng1fqtz/image/upload/v1583939438/IMG_0670_kuow1v.jpg"); */
+   background-image: url("https://media.giphy.com/media/fq8HxnZAkoTybqirPN/giphy.gif");
    word-wrap: wrap;
 }
 section {
     margin:0;
-    height: 100%
-    cursor: url('..images')
+    height: 100%;
+    background-image: url("https://media.gettyimages.com/photos/construction-of-twin-towers-world-trade-center-picture-id84950495?s=2048x2048");
+    filter: brightness(80%);
+    cursor: url('..images');
+    background-size: 80%;
+}
+section:hover {
+    transform: scale(.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 h1 {
     font-size:1em;
@@ -34,11 +41,63 @@ h2 {
     font-family:'Slabo 15px', serif;
 }
 a {
-    color:#5e722d; 
     text-decoration: none;
-    background-color: rgba(44, 58, 136, 0.479);
     align-content: center;
+ 
 }
+#photo{
+    animation: blur 5s infinite alternate;
+    height: 90vw;
+    max-height: 240px;
+    max-width: 240px;
+    position: relative;
+    width: 90vw;
+  }
+  
+  #photo div{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  #normal{
+    background-image: url(https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg);
+    background-size: cover;
+    transform: rotate(90deg);
+  }
+  #invert{
+    animation: mask 5s steps(69) infinite alternate;
+    background-image: url(https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg);
+    background-size: cover;
+    filter: invert(2) grayscale(2);
+    -webkit-mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    -webkit-mask-size: 7000% 100%;
+    mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    mask-size: 7000% 100%;
+    transform: rotate(90deg);
+  }
+  
+  @keyframes blur{
+    from{
+      filter: blur(3px);
+      opacity: 0;
+    }
+    to{
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes mask{
+    from{
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+    to{
+        -webkit-mask-position: 0% 0;
+        mask-position: 0% 0;
+    }
+  }
 ul {
     display: flex;
     list-style-type:none;
@@ -47,6 +106,8 @@ ul {
     text-align: center;
     justify-content: center;
     justify-content: space-evenly;
+    background-color:#384c07;
+ 
 }
 li {
     display: flex;
@@ -55,30 +116,26 @@ li {
     letter-spacing: .1em;
     word-spacing: 1em;
     justify-content: center;
-    
-    
 }
 main {
-    /* border: 1px solid black; */
-    /* display:flex; */
+
     align-content:center;
-}
-.projects {
-    display: flex;
-    direction: column;
-    align-content: center;
-    margin:10px;
-    /* align-items: stretch; */
-    /* justify-content: stretch; */
-    /* width:33%; */
 }
 img {
     justify-content:center;
     width:80%;
     padding-left: 2em;
-    opacity: .7;
+    opacity: .9;
     image-orientation: 20deg;
+    padding: 50px;
+    transition: transform .2s;
+    margin: 0 auto;
 }
+img:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
 /* good */
 button {
   display: flex;
@@ -86,17 +143,22 @@ button {
   width: 100%;
   height: 100%;
   background-color:white;
-  animation-name: example;
-  animation-duration: 600000;
 } 
-/* @keyframes example {
-    0%   {background-color: white;}
-    25%  {background-color: blue;}
-    50%  {background-color: white;}
-    100% {background-color: black;} */
-/* } */
-/* good */
+.zoom {
+    padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(.75); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
 footer {
+    background:url(https://res.cloudinary.com/dkng1fqtz/image/upload/v1584124097/IMG_0109_imrcqf.jpg) no-repeat left, url(https://res.cloudinary.com/dkng1fqtz/image/upload/a_90/v1584059456/IMG_2928_vdg3yv.jpg) no-repeat right; 
+    background-color: black;
+    background-size: 40%;
+    transform: 90deg;
     margin-top: 20px;
     left: 0;
     bottom: 0;
@@ -104,7 +166,12 @@ footer {
     height: 150px;
 
 }
+.footerImage {
+    size:"50%";
+}
 .commentBox {
+    margin-left:43%;
+    width:185px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -113,7 +180,7 @@ footer {
     text-align:center;
     border-color: red;
     border: 1px solid black;
-    background-color: silver;
+    background-color: #384c07;
 }
 .helpful {
     background-color: white;
@@ -123,13 +190,34 @@ button {
     background-color: white;
 }
 h4 {
-    color:white;
+    color:black;
+    letter-spacing: 10px;
+    font-style: oblique;
+    font-stretch: expanded;
+    text-shadow:2px 2px white;
+    font-size: 20px;
     text-align:center;
 }
-.slide-right.in-view {
-    opacity: 1; 
-    transform: translate3d(0,0,0);
-}
+.hero-image {
+    background: url(https://res.cloudinary.com/dkng1fqtz/image/upload/c_thumb,w_200,g_face/v1584115531/IMG_0103_tu9xon.jpg) no-repeat center; 
+    transform: rotate(0deg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    position: relative;
+    margin-left: 80px;
+    margin-top:20px;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    font-family: 'Baloo Chettan 2', cursive;
+    top: 45%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
 @media(max-width: 768px){
     .projects{
@@ -146,8 +234,8 @@ h4 {
 @media(min-width: 769px) {
     section {
         display:grid;
-        /* grid-template-columns:repeat(3, 1fr);
-        grid-template-rows:repeat(3, 1fr); */
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:repeat(3, 1fr);
         grid-gap: 10px;
         grid-template-rows: auto 1fr auto;
         grid-template-columns: 100%;
@@ -170,10 +258,9 @@ h4 {
         }
         .projects {
             display: flex;
-            flex-direction: column;
-            align-content: center;
-            width: 10%;
-            margin-left: 45%;
+            align-content: left;
+            width: 30%;
+            margin-left: 35%;
             text-align: right;
             
         }
@@ -184,7 +271,7 @@ h4 {
         a {
                 color:#5e722d; 
                 text-decoration: none;
-                background-color: rgba(44, 58, 136, 0.479);
+                /* background-color: rgba(44, 58, 136, 0.479); */
                 align-content: center;
                 font-size: 20px;
                 font-family: cursive;
@@ -206,39 +293,10 @@ h4 {
             padding-top: 50px;
         }
         body { 
-               background-color: gray;
+               background-color:#384c07;
             }
 } 
-/* the below is from https://gmetri.com/justaboutreal/spice-up-your-webpage-with-a-dynamic-vr-background/ */
-/* body.a-body {
-    height: auto;
-    overflow: auto;
-}
-html.a-html {
-    height: 5em;
-    overflow: auto;
-    position: static;
-}
-// Hides the extra width taken by the canvas
-.vr-background {
-    overflow: hidden;
-}
-// Set a height for the container – this is important.
-// The value of the height is your design choice. I used a full-page height
-.vr-container {
-    height: 100%;
-}
-html.a-sky {
-    height: 50px;
-}
-.vr-container .vr-overlay-content {
-    position: absolute;
-    z-index: -1; 
-    /* // positions the content over the viewer */
-    /* pointer-events: none; */
-     /* // this is important as it enables your interactions on the overlay to be detected by a-frame */
-/* }
-.vr-overlay-content .action {
-    pointer-events: initial; // enables clicks on the button, which was disabled by pointer-events: none
-} */ 
 
+label {
+    color:blue;
+}

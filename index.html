@@ -5,6 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
     <script
@@ -15,58 +16,42 @@
 </head>
 
 <body>
-    <!-- <aside>
-        const cursor = document.querySelector('.cursor')
 
-        document.addEventListener('mousemove', e =>{
-            cursor.setAttribute('style', "top: "+e.pageY"+"px; left: +"e.pageX")
-        })
-    </aside> -->
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> 
     <!-- this is from:https://gmetri.com/justaboutreal/spice-up-your-webpage-with-a-dynamic-vr-background/ -->
    
     <header>
-       
-        <h1>Oleg Gelfand software engineer</h1>
+      <ul>
+        <li><a href ="aboutMe.html" class="helpful">About Me </a></li>
+        <li><a href="#" class="helpful">My Code</a></li>
+        <li><a href="#" class="helpful">Skills and Education</a></li>
+        <li><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="helpful">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="helpful">My Resume</a></li>
+    </ul>
+        <h1>Oleg Gelfand Builder - Creator - Full-Stack Developer </h1>
         <h2> "Success is not final; failure is not fatal: It is the courage to continue that counts."
 
             -- Winston S. Churchill</h2>
             <div class="hamIcon">
               <h1>&#9776;</h1>
             </div>
-        <div class ="projects">
-            <button><a href ="aboutMe.html" class="helpful">About Me</a></button>
-            <button><a href ="#" class="helpful">Helpful Sites</a></button>
-            <button><a href ="#" class="helpful">My Code</a></button>
-        </div>
             
     </header>
     
     <main>
+   <!-- //photo effect -->
+      <div class="hero-image" id="photo">
+        <div id="normal"></div>
+        <div id=invert></div>
+          <h3>if it can be built, I want to build it</h3>
+          <button>Hire me</button>
+      </div>
         
         
-        <!-- <div class=”vr-container”> <!-- container div 
-            <!-- <a-scene class=”vr-background”> the  a-frame embed code 
-              <!-- <a-entity rotation="0 3 0"> rotation value sets the starting view point, play around! -->
-                <!-- <a-animation attribute="rotation" 
-                         dur="600000"
-                         easing="linear"
-                         fill="forwards"
-                         to="0 360 0"
-                         repeat="indefinite"></a-animation> remove if you don’t like the automatic movement -->
-                    <!-- <a-sky src="https://res.cloudinary.com/dkng1fqtz/image/upload/v1583939438/IMG_0670_kuow1v.jpg"></a-sky> --> 
-              <!-- </a-entity>
-            </a-scene>
-            <div class="vr-overlay-content">
-                <h1>Let's explore the virtual world.</h1>
-                <button class="action">Get Started</button>
-            </div> -->
-        <!-- </div> --> 
-        <ul>
-            <li><a href="#">Failures </a></li>
-            <li><a href="#">Successes</a></li>
-        </ul>
-        <section>
+      </div>
+      
+      </div> 
+        <section>    
             <!-- <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article>
             <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article>
             <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article>
@@ -76,34 +61,34 @@
             </section>
             
     </main>
-     
+    
         
       
       
     <script src="app.js"></script>
     <footer>   
-      <div class ="projects">
-        <button><a href="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584018550/Screen_Shot_2020-03-12_at_9.08.39_AM_ktohqn.png"> My Resume</a></button>
-        <button><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/">Linked In</a></button>
-    </div>
       <div class="commentBox">
-        <form
-      action="https://formspree.io/xeqzjvqn"
-      method="POST"
-    >
-      <label>
-        Email:
-        <input type="text" name="_replyto">
-      </label>
-      <label>
-        Comment:
-        <textarea name="message" class="slide-right in-view"></textarea>
-      </label>
-    
-      <!-- your other form fields go here -->
-    
-      <button type="submit">Submit</button>
-    </form>
+    <form
+  action="https://formspree.io/mbjklbrj"
+  method="POST"
+>
+   <label>
+    Your name:
+    <textarea name="message"></textarea>
+  </label>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
      </div>
      
       </footer>       

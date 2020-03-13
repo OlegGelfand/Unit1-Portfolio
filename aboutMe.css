@@ -30,3 +30,19 @@ scrollbar-base-color: brown;
 h1 {
     text-align: center;
 }
+
+span {
+    background-color: yellow;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+span a:hover{
+    text-decoration:none;
+    color:white;
+}
