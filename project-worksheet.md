@@ -12,8 +12,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 1| Wireframes / Priority Matrix / Timeline | Complete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete
 |Day 4| MVP & Bug Fixes | Complete
-|Day 5| Final Touches | Incomplete
-|Day 6| Present | Incomplete
+|Day 5| Final Touches | Complete
+|Day 6| Present | Complete
 
 
 ## Project Description
@@ -87,27 +87,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 Component |	Priority |	Estimated Time|	Time Invested	|Actual Time|
 | --- | :---: |  :---: | :---: | :---: |
-|Build header paragraph	|H	|0.5hrs|	.25hrs|	0hrs|
+|Build header paragraph	|H	|0.5hrs|	.25hrs|	.25hrs|
 |Nest page in a grid	|H|	1hr|	.25hrs|	.5hrs|
 |Add Name|	H	|0.5hrs|	.25hrs|	.25hrs|
 |Add Motivational Quote|	H	|0.5hrs	|.25hrs	|.25hrs
-|Add Nav bar 1 in header to link to pages devoted to projects|	H|	1.5hrs|	.5hrs|	.5hrs|
-|Add Nav bar 2 on left side of desktop view|	H|	2.0hrs|	.5hrs|	.5hrs|
+|Add Nav bar 1 in header to link to pages devoted to projects|	H|	1.5hrs|	1.5hrs|	1.5hrs|
+|Add Nav bar 2 on left side of desktop view|	H|	2.0hrs|	2.5hrs|	2.5hrs|
 |link resume to Nav 2|	H|	.5hrs|	.5hrs|	.5hrs|
 |link about me page to Nav 2|	H |.5hrs|	.25hrs|	.25hrs|
 |link other profile sites to Nav 2|	H|	.5hrs|	.5hrs|	.5hrs|
 |Add Nav bar 3 in footer to link helpful sites|	H|	1hr|	.5hrs|	0hrs|
-|Build "About Me" Section|	H|	3hrs|	0hrs|	0hrs|
-|Build main portion of the page|	H	|5hrs|	3hrs|	0hrs|
+|Build "About Me" Section|	H|	3hrs|	3.5hrs|	4hrs|
+|Build main portion of the page|	H	|5hrs|	3hrs|	3hrs|
 |build Responsive design|	H|	4hrs|	2hrs|	2hrs|
 |Pull objects from spreadsheet|	H|	3hrs|	4hrs|
 |Create layout to display photos of the projects|	H|	3hrs|	4hrs|	4hrs|
-|Total|	H	|18.5hrs	|5hrs|	|5hrs|
-|Develop contact me so that it opens with prompts for users to fill out|	M|	3hrs|	0hrs|	0hrs|
-|Create option to see the projects larger when scrolling L and R|	M|	3hrs|	0hrs|	0hrs|
-|Clean up projects|	L|	4hrs|	0hrs|	0hrs|
-|Clean up Repl.it projects|	L|	4hrs|	0hrs|	0hrs|
-|Total|	All	|34.5hrs	|5hrs|	|5hrs|
+|Total|	H	|18.5hrs	|25hrs|	|24hrs|
+|Develop contact me so that it opens with prompts for users to fill out|	M|	3hrs|	4hrs|	4hrs|
+|Create option to see the projects larger when scrolling L and R|	M|	3hrs|	3hrs|	3hrs|
+|Clean up projects|	L|	4hrs|	7hrs|	6hrs|
+|Clean up Repl.it projects|	L|	4hrs|	4hrs|	4hrs|
+|Total|	All	|34.5hrs	|39hrs|	|37.5hrs|
 
 #### Post MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
