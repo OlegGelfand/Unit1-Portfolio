@@ -21,35 +21,40 @@
     <!-- this is from:https://gmetri.com/justaboutreal/spice-up-your-webpage-with-a-dynamic-vr-background/ -->
    
     <header>
-      <ul>
-        <li><a href ="aboutMe.html" class="helpful">About Me </a></li>
-        <li><a href="#" class="helpful">My Code</a></li>
-        <li><a href="#" class="helpful">Skills and Education</a></li>
-        <li><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="helpful">LinkedIn</a></li>
-        <li><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="helpful">My Resume</a></li>
-    </ul>
-        <h1>Oleg Gelfand Builder - Creator - Full-Stack Developer </h1>
+      <h1 class="logo">Oleg Gelfand Builder - Creator - Full-Stack Developer</h1>
+      <nav>
+        <div id="hamburger">
+          <ul class="open">
+              <li><a href="http://127.0.0.1:5500/aboutMe.html" class="menu-toggle">About Me</a></li>
+              <li><a href="http://127.0.0.1:5500/myCode.html" class="menu-toggle">My Code</a></li>
+              <li><a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="menu-toggle">LinkedIn</a></li>
+              <li><a href="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584018550/Screen_Shot_2020-03-12_at_9.08.39_AM_ktohqn.png" class="menu-toggle">My Resume</a></li>
+              <li><a href="#contact" class="menu-toggle">Youtube</a></li>
+          </ul>
+          <div class="hamburger-toggle">
+              <div class="hamburger"></div>
+          </div>
+        </div>
+        <div id="desktop-nav">
+          <a href="aboutMe.html" class="animation-element fade-down active">About Me</a>
+          <a href="http://127.0.0.1:5500/myCode.html" class="animation-element fade-down" id="about-link">My Code</a>
+          <a href="https://www.linkedin.com/in/oleg-gelfand-client-focused-client-driven/" class="animation-element fade-down" id="projects-link">LinkedIn</a>
+          <a href="https://res.cloudinary.com/dkng1fqtz/image/upload/v1584018550/Screen_Shot_2020-03-12_at_9.08.39_AM_ktohqn.png" class="animation-element fade-down" id="contact-link">My Resume</a>
+          <a href="#contact" class="animation-element fade-down" id="contact-link">Youtube</a>
+      </div>
+      </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <h2> "Success is not final; failure is not fatal: It is the courage to continue that counts."
 
-            -- Winston S. Churchill</h2>
-            <div class="hamIcon">
-              <h1>&#9776;</h1>
-            </div>
-            
+            -- Winston S. Churchill</h2>        
     </header>
-    
     <main>
    <!-- //photo effect -->
       <div class="hero-image" id="photo">
         <div id="normal"></div>
         <div id=invert></div>
-          <h3>if it can be built, I want to build it</h3>
+          <h3>My name is Oleg Gelfand <br>if it can be built, I want to build it</h3>
           <button>Hire me</button>
-      </div>
-        
-        
-      </div>
-      
       </div> 
         <section>    
             <!-- <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article>
@@ -59,34 +64,25 @@
             <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article>
             <article><img src="https://www.sciencemag.org/sites/default/files/styles/article_main_image_-_1280w__no_aspect_/public/dogs_1280p_0.jpg?itok=6jQzdNB8"></article> --> 
             </section>
-            
     </main>
-    
-        
-      
-      
     <script src="app.js"></script>
     <footer>   
       <div class="commentBox">
-    <form
-  action="https://formspree.io/mbjklbrj"
-  method="POST"
->
-   <label>
-    Your name:
-    <textarea name="message"></textarea>
+      <form
+        action="https://formspree.io/mbjklbrj"
+        method="POST">
+      <label>
+         Name:
+      <textarea name="message"></textarea>
   </label>
   <label>
-    Your email:
+    Email:
     <input type="text" name="_replyto">
   </label>
   <label>
-    Your message:
+    Message:
     <textarea name="message"></textarea>
   </label>
-
-  <!-- your other form fields go here -->
-
   <button type="submit">Send</button>
 </form>
      </div>

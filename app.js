@@ -1,5 +1,11 @@
 console.log("this works")
 
+// const hamburger= document.querySelector('#hamIcon')
+// const navigation= document.querySelector('nav')
+
+//create a function that will animate the menu which will switch display none to display links
+
+
 let url = 'https://docs.google.com/spreadsheets/d/1ZgSrmkNKNaoR9jbnrp_he1qtHLmGJsq191HpCkT86sM/edit?usp=sharing'
 let id = '1ZgSrmkNKNaoR9jbnrp_he1qtHLmGJsq191HpCkT86sM'
 
@@ -47,13 +53,23 @@ function app (projects){
   })
 };
 
-function toggleClass(){
-  let menu = document.querySelector(".projects");
-  menu.classList.toggle('toggleCls')
+// function toggleClass(){
+//   let menu = document.querySelector(".mainMenu");
+//   menu.classList.toggle('toggleCls');
+// }
+// // }
 
-}
+//Hamburger menu toggle function
+$('.hamburger-toggle').click(function () {
+  $('ul').toggleClass('opening');
+  $(this).toggleClass('open');
+});
+//Dropdown menu toggle function
+$('.menu-toggle').click(function () {
+  $('ul').toggleClass('opening');
+  $('.hamburger-toggle').toggleClass('open');
+});
 
-let hamburger = document.querySelector('.hamIcon');
-hamburger.addEventListener("click",toggleClass);
+
 
 

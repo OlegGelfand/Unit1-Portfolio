@@ -1,6 +1,6 @@
 
 html {
-    background-color: rgba(255,0,0, .7);
+    /* background-color: rgba(51, 3, 3, 0.3); */
     background-size: cover;
     
 }
@@ -17,14 +17,15 @@ font-style: oblique;
 font-variant: small-caps;
 text-shadow: yellow;
 font-family: fantasy;
-margin: 10px;
+max-width:250px;
+margin-left:350px;
 font-weight: 900;
 font-size: 25px;
-background-color: cadetblue;
-background-image: url("https://res.cloudinary.com/dkng1fqtz/imagse/upload/v1583939438/IMG_0670_kuow1v.jpg");
 background-size: contain;
 background-size: 100%;
 scrollbar-base-color: brown;
+justify-content:center;
+border: 20px solid gray;
 }
 
 h1 {
