@@ -100,14 +100,14 @@ Component |	Priority |	Estimated Time|	Time Invested	|Actual Time|
 |Build "About Me" Section|	H|	3hrs|	3.5hrs|	4hrs|
 |Build main portion of the page|	H	|5hrs|	3hrs|	3hrs|
 |build Responsive design|	H|	4hrs|	2hrs|	2hrs|
-|Pull objects from spreadsheet|	H|	3hrs|	4hrs|
+|Pull objects from spreadsheet|	H|	3hrs|	4hrs|4hrs|
 |Create layout to display photos of the projects|	H|	3hrs|	4hrs|	4hrs|
 |Total|	H	|18.5hrs	|25hrs|	|24hrs|
 |Develop contact me so that it opens with prompts for users to fill out|	M|	3hrs|	4hrs|	4hrs|
 |Create option to see the projects larger when scrolling L and R|	M|	3hrs|	3hrs|	3hrs|
-|Clean up projects|	L|	4hrs|	7hrs|	6hrs|
+|Clean up projects|	L|	4hrs|	7hrs|	5hrs|
 |Clean up Repl.it projects|	L|	4hrs|	4hrs|	4hrs|
-|Total|	All	|34.5hrs	|39hrs|	|37.5hrs|
+|Total|	All	|34.5hrs	|39hrs|	|38hrs|
 
 #### Post MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
@@ -123,19 +123,34 @@ Component |	Priority |	Estimated Time|	Time Invested	|Actual Time|
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
+ 
+My Youtube Video
+ https://youtu.be/5F4ZbWyTZ1c
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+ #normal{
+    background-image: url(https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg);
+    background-size: cover;
+    transform: rotate(90deg);
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+  }
+  #invert{
+    animation: mask 5s steps(69) infinite alternate;
+    background-image: url(https://res.cloudinary.com/dkng1fqtz/image/upload/v1584115531/IMG_0103_tu9xon.jpg);
+    background-size: cover;
+    filter: invert(2) grayscale(2);
+    -webkit-mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    -webkit-mask-size: 7000% 100%;
+    mask: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/141041/sheet.png');
+    mask-size: 7000% 100%;
+    transform: rotate(90deg);
+    margin-right: 10px;
+  }
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
+ had a very hard time when due to little mistakes- being careless when commenting stuff out. It took a while but I combed through the entire code and pulled it out.
 
 #### SAMPLE.....
 **ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
